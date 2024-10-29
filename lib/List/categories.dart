@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../Resumbuilderapp/routes/routes.dart';
+import 'package:resume_builder_app/Routes/routes.dart';
 
-List<Map<String, dynamic>> Resume = [
+List<Map<String, dynamic>> categories = [
   {
     'icon': Icons.person,
     'text': "Personal",

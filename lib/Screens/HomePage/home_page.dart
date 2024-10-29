@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:resumbuilder/Resumbuilderapp/routes/routes.dart';
-import '../../../../lists/homepage.dart';
+import 'package:resume_builder_app/List/categories.dart';
+import 'package:resume_builder_app/Routes/routes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -30,9 +30,9 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: ListView.builder(
-          itemCount: Resume.length,
+          itemCount: categories.length,
           itemBuilder: (context, index) {
-            final resumeItem = Resume[index];
+            final resumeItem = categories[index];
             return Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: Card(
@@ -119,7 +119,10 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           onPressed: () {
-            Navigator.pushNamed(context, Routes.pdfView);
+            Navigator.pushNamed(
+              context,
+              Routes.pdfView,
+            );
           },
           icon: const Icon(
             Icons.picture_as_pdf,

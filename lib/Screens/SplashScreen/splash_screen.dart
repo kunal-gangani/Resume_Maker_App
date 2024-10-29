@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import '../Resumbuilderapp/routes/routes.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:resume_builder_app/Routes/routes.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
-import 'package:resumbuilder/variables/variable.dart'; // Make sure this imports your variable file
+import 'package:resume_builder_app/variables/variable.dart';
 
 class Pdf extends StatefulWidget {
   const Pdf({super.key});
@@ -17,7 +17,9 @@ class _PdfState extends State<Pdf> {
   Future<Uint8List> pdfView() async {
     pw.Document pdf = pw.Document();
 
-    ByteData assetByteData = await rootBundle.load("assets/images/call.png");
+    ByteData assetByteData = await rootBundle.load(
+      "assets/images/call.png",
+    );
 
     pdf.addPage(
       pw.Page(

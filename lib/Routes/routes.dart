@@ -1,14 +1,13 @@
-import 'package:flutter/cupertino.dart';
-import 'package:resumbuilder/splash/scrren/personal/personal.dart';
-import 'package:resumbuilder/splash/scrren/view/Carrier.dart';
-import 'package:resumbuilder/splash/scrren/view/home/PDF.dart';
-import 'package:resumbuilder/splash/scrren/view/home/home.dart';
-import 'package:resumbuilder/splash/scrren/view/home/skill.dart';
-import 'package:resumbuilder/splash/splash.dart';
-
-import '../../splash/scrren/view/edu.dart';
-import '../../splash/scrren/view/home/Declaration.dart';
-import '../../splash/scrren/view/home/exp.dart';
+import 'package:flutter/material.dart';
+import 'package:resume_builder_app/Screens/CareerPage/career.dart';
+import 'package:resume_builder_app/Screens/DeclarationPage/declaration.dart';
+import 'package:resume_builder_app/Screens/EducationPage/education_page.dart';
+import 'package:resume_builder_app/Screens/ExperiencePage/experience_page.dart';
+import 'package:resume_builder_app/Screens/HomePage/home_page.dart';
+import 'package:resume_builder_app/Screens/PDFViewPage/pdf_view.dart';
+import 'package:resume_builder_app/Screens/PersonalDetails/personal.dart';
+import 'package:resume_builder_app/Screens/SkillsPage/skills_page.dart';
+import 'package:resume_builder_app/Screens/SplashScreen/splash_screen.dart';
 
 class Routes {
   static String splashscreen = '/';
@@ -24,7 +23,7 @@ class Routes {
   static Map<String, WidgetBuilder> myRoutes = {
     splashscreen: (context) => const SplashScreen(),
     homePage: (context) => const HomePage(),
-    personalDetails: (context) => UserForm(),
+    personalDetails: (context) => const PersonalDetails(),
     educationsPage: (context) => const Education(),
     careersPage: (context) => const Career(),
     experiencesPage: (context) => const Experience(),

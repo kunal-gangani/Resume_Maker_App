@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:resumbuilder/Resumbuilderapp/routes/routes.dart';
+import 'package:resume_builder_app/Routes/routes.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

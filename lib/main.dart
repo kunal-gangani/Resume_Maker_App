@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'Resumbuilderapp/resumbuilderapp.dart';
+import 'package:resume_builder_app/MyApp/myapp.dart';
 
 void main() {
   runApp(
