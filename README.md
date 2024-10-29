@@ -1,26 +1,31 @@
-# Flutter Resume Builder App
+# Resume Builder App
 
 ## Overview
-
-The Flutter Resume Builder App allows users to create professional resumes easily. This app utilizes Flutter's capabilities to provide a user-friendly interface and generates a PDF of the resume upon completion. The app leverages global data to manage user inputs effectively.
+The Resume Builder App is a Flutter application that allows users to create and manage their resumes easily. Users can input their personal details, skills, education, experience, declarations, and references. The app formats this information into a structured PDF, which can be shared with others.
 
 ## Features
-
-- User-friendly interface to input personal and professional details.
-- Generate a professional PDF resume.
-- Store and manage global data for easy access across the app.
-- Customizable resume templates.
-- Preview feature to see the resume before generating the PDF.
+- **User-Friendly Interface**: Intuitive UI for easy data entry.
+- **Personal Details**: Users can input their name, email, phone number, and address.
+- **Skills**: Add multiple skills as a list of strings.
+- **Education**: Input educational background, including degrees and institutions, stored as a list of strings.
+- **Experience**: Document work experience with job titles and company names, also stored as a list of strings.
+- **Declarations**: Add any personal declarations or statements.
+- **References**: Include references for future employers.
+- **PDF Generation**: All entered information is formatted into a professional PDF.
+- **Share Functionality**: Easily share the generated PDF with others.
 
 ## Technologies Used
-
 - Flutter
 - Dart
-- PDF generation library (e.g., `pdf` or `flutter_pdf`)
-- State management (e.g., Provider or GetX)
+- PDF generation library (e.g., `pdf` package)
 
-## Installation
+## Getting Started
 
+### Prerequisites
+- Flutter SDK
+- Dart
+
+### Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/resume_builder_app.git
